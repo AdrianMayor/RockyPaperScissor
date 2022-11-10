@@ -14,7 +14,7 @@ const ResultScreen = ({
     setUserChoice("");
     setComputerChoice("");
   };
-  console.log("computerchoice", computerChoice);
+
   return (
     <div className="mainGameBox__result">
       <div className="mainGameBox__result--card">

@@ -39,7 +39,6 @@ const Game = () => {
     if (userChoice !== "" && computerChoice !== "") {
       gameResult();
     }
-    console.log(resultMessage);
   }, [userChoice]);
 
   if (userChoice !== "") console.log(choices[userChoice].win);
