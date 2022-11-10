@@ -1,0 +1,45 @@
+.mainGameBox__initial {
+  display: grid;
+  grid-template-areas:
+    "paper scissors"
+    "rock rock";
+  justify-items: center;
+  gap: 16rem 6rem;
+
+  background-image: url("../../images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  position: relative;
+}
+
+#paper {
+  grid-area: paper;
+
+  background-image: linear-gradient(white, white),
+    linear-gradient(to top, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  box-shadow: 3px 9px rgb(18, 61, 155), inset 7px 8px 6px hsl(0deg 0% 21% / 59%);
+}
+
+#rock {
+  grid-area: rock;
+
+  background-image: linear-gradient(white, white),
+    linear-gradient(to top, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  box-shadow: 3px 9px rgb(168, 30, 53), inset 7px 8px 6px hsl(0deg 0% 21% / 59%);
+  position: absolute;
+  bottom: 30px;
+}
+
+#rock.buttonGame__result {
+  position: initial;
+}
+
+#scissors {
+  grid-area: scissors;
+
+  background-image: linear-gradient(white, white),
+    linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  box-shadow: 3px 9px rgb(155, 123, 18),
+    inset 7px 8px 6px hsl(0deg 0% 21% / 59%);
+}

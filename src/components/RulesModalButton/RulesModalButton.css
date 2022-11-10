@@ -1,0 +1,22 @@
+.rulesButton {
+  background: none;
+  color: aliceblue;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  border-color: aliceblue;
+  letter-spacing: 0.3rem;
+  align-self: flex-end;
+  /* margin-right: 2rem; */
+  font-size: 0.8rem;
+  cursor: pointer;
+  width: fit-content;
+  justify-self: end;
+}
+
+@media (max-width: 510px) {
+  .rulesButton {
+    align-self: center;
+    justify-self: center;
+    margin: 0;
+  }
+}
