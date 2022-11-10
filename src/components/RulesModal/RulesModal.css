@@ -1,0 +1,72 @@
+.rulesModalPanel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
+.rulesModalPanel__container {
+  position: inherit;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem 2rem 2rem 2rem;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+
+  display: grid;
+
+  grid-template-areas:
+    "rulesTitle rulesImage"
+    "closeButton closeButton";
+
+  row-gap: 2rem;
+}
+
+.rulesModalPanel__closeButton {
+  background: none;
+  border: none;
+  width: 1rem;
+  font-size: 1.3rem;
+  color: rgb(134, 137, 139);
+  cursor: pointer;
+}
+
+@media (max-width: 510px) {
+  .rulesModalPanel__container {
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+
+    grid-template-areas:
+      "rulesTitle"
+      "rulesImage"
+      "closeButton";
+
+    row-gap: 0;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .rulesModalPanel__title {
+    grid-area: rulesTitle;
+  }
+
+  .rulesModalPanel__img {
+    grid-area: rulesImage;
+  }
+
+  .rulesModalPanel__closeButton {
+    grid-area: closeButton;
+  }
+}

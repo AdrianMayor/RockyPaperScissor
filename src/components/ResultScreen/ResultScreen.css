@@ -1,0 +1,78 @@
+.mainGameBox__result {
+  display: flex;
+  gap: 2rem;
+}
+
+.mainGameBox__result--card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  gap: 3rem;
+}
+
+.mainGameBox__result--card p {
+  text-align: center;
+  color: #f6f6f6;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.mainGameBox__result--resultPlayAgain {
+  text-align: center;
+  align-self: center;
+  font-size: 3rem;
+  color: #f6f6f6;
+  font-weight: 700;
+}
+
+.mainGameBox__result--resultPlayAgain button {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  letter-spacing: 0.2rem;
+  border: none;
+  font-weight: 700;
+}
+
+.resultPlayAgainButton__lose {
+  color: #f82626;
+}
+
+.resultPlayAgainButton__win {
+  color: hsl(229, 64%, 46%);
+}
+
+@media (max-width: 510px) {
+  .mainGameBox__result {
+    display: grid;
+    gap: 2rem 0;
+    grid-template-areas:
+      "userChoice computerChoice"
+      "playAgain playAgain";
+  }
+
+  .mainGameBox__result :first-child {
+    grid-area: userChoice;
+  }
+
+  .mainGameBox__result :last-child {
+    grid-area: computerChoice;
+  }
+
+  .mainGameBox__result--resultPlayAgain {
+    grid-area: playAgain;
+  }
+
+  .mainGameBox__result--card {
+    flex-direction: column-reverse;
+  }
+
+  .mainGameBox__result--resultPlayAgain button {
+    width: 55%;
+  }
+
+  .mainGameBox__result--card p {
+    font-size: 1.2rem;
+  }
+}
