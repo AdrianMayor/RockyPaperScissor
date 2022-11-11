@@ -1,14 +1,8 @@
 #game {
-  /*  width: 100%; */
-  /*   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   display: grid;
   grid-template-rows: 170px 70% 10%;
   grid-template-columns: 1fr;
-  width: 700px;
+  width: 755px;
 }
 
 .mainGameBox {
