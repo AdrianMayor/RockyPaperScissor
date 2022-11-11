@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://rocky-paper-scissor.vercel.app/)
+- Live Site URL: [RockyPaper](https://rocky-paper-scissor.vercel.app/)
 
 ## My process
 
