@@ -9,9 +9,13 @@
   height: 476px;
 }
 
-@media (max-width: 510px) {
+@media (max-width: 540px) {
   #game {
     gap: 0;
     width: 100vw;
+  }
+
+  .mainGameBox {
+    height: 328px;
   }
 }

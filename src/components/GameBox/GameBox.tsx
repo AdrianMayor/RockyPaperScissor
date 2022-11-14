@@ -1,13 +1,22 @@
-import ButtonGame from "..//ButtonGame/ButtonGame";
+import React from "react";
+import ButtonGame from "../ButtonGame/ButtonGame";
+import { Choices } from "../Game/gameChoices.model";
 import "./GameBox.css";
 
-const GameInitialBox = ({
+interface Props {
+  choices: Choices;
+  setPlayed: (played: boolean) => void;
+  setComputerChoice: (choice: string) => void;
+  setUserChoice: (choice: string) => void;
+}
+
+const GameInitialBox: React.FunctionComponent<Props> = ({
   setUserChoice,
   choices,
   setPlayed,
   setComputerChoice,
 }) => {
-  const handleOnClick = (e) => {
+  const handleOnClick = (e): void => {
     let choice = e.target.className;
 
     if (choice.includes("rock")) setUserChoice("rock");
@@ -39,6 +48,7 @@ const GameInitialBox = ({
               button={choice}
               key={choice}
               handleOnClick={handleOnClick}
+              result={""}
             />
           );
         })}

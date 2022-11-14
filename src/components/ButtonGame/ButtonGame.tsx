@@ -1,9 +1,20 @@
+import React from "react";
 import paperIcon from "../../images/icon-paper.svg";
 import rockIcon from "../../images/icon-rock.svg";
 import scissorsIcon from "../../images/icon-scissors.svg";
 import "./ButtonGame.css";
 
-const ButtonGame = ({ button, handleOnClick, result = "" }) => {
+interface Props {
+  button: string;
+  result: string;
+  handleOnClick?: (event: object) => void;
+}
+
+const ButtonGame: React.FunctionComponent<Props> = ({
+  button,
+  handleOnClick,
+  result,
+}) => {
   return (
     <>
       {button === "scissors" && (

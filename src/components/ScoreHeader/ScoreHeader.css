@@ -30,7 +30,7 @@
   color: hsl(229, 25%, 31%);
 }
 
-@media (max-width: 510px) {
+@media (max-width: 540px) {
   .scoreHeader img {
     transform: scale(0.6);
   }

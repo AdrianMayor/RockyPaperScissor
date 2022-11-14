@@ -4,6 +4,7 @@
     "paper scissors"
     "rock rock";
   justify-items: center;
+  justify-content: center;
   gap: 16rem 6rem;
 
   background-image: url("../../images/bg-triangle.svg");
@@ -42,4 +43,14 @@
     linear-gradient(to top, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
   box-shadow: 3px 9px rgb(155, 123, 18),
     inset 7px 8px 6px hsl(0deg 0% 21% / 59%);
+}
+
+@media (max-width: 540px) {
+  .mainGameBox__initial {
+    gap: 15rem 3rem;
+  }
+
+  #rock {
+    bottom: 50px;
+  }
 }

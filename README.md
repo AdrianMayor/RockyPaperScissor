@@ -46,11 +46,11 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- TypeScript (in progress)
+- TypeScript
 
 ### Continued development
 
-I want to improve the application and practice with typescript , plus implement the bonus side which is the addition of lizard and spock to the options as the frontendmentor exercise suggest with the 'bonus' part.
+Implement the bonus side which is the addition of lizard and spock to the options as the frontendmentor exercise suggest with the 'bonus' part.
 
 ## Author
 

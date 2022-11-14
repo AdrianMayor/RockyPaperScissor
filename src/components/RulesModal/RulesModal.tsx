@@ -1,7 +1,12 @@
+import React from "react";
 import RulesVanillaGame from "../../images/image-rules.svg";
 import "./RulesModal.css";
 
-const RulesModal = ({ setRulesSwitch }) => {
+interface Prop {
+  setRulesSwitch: (boolean: boolean) => void;
+}
+
+const RulesModal: React.FC<Prop> = ({ setRulesSwitch }) => {
   return (
     <aside className="rulesModalPanel">
       <div className="rulesModalPanel__container">

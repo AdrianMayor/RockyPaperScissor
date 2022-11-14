@@ -1,7 +1,17 @@
+import React from "react";
 import ButtonGame from "../ButtonGame/ButtonGame";
 import "./ResultScreen.css";
 
-const ResultScreen = ({
+interface Props {
+  userChoice: string;
+  computerChoice: string;
+  resultMessage: string;
+  setPlayed: (played: boolean) => void;
+  setUserChoice: (choice: string) => void;
+  setComputerChoice: (choice: string) => void;
+}
+
+const ResultScreen: React.FunctionComponent<Props> = ({
   userChoice,
   computerChoice,
   resultMessage,
