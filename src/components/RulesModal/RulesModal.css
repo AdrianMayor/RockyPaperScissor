@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 510px) {
+@media (max-width: 540px) {
   .rulesModalPanel__container {
     height: 100vh;
     width: 100vw;

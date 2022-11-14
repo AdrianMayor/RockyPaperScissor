@@ -13,7 +13,7 @@
   justify-self: end;
 }
 
-@media (max-width: 510px) {
+@media (max-width: 540px) {
   .rulesButton {
     align-self: center;
     justify-self: center;
