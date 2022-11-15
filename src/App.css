@@ -21,11 +21,3 @@ html {
   /* width: 1000px; */
   justify-content: center;
 }
-
-@media (max-width: 540px) {
-  .App {
-    height: auto;
-    max-height: auto;
-    overflow: auto;
-  }
-}
