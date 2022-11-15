@@ -46,7 +46,7 @@
 @media (max-width: 540px) {
   .mainGameBox__result {
     display: grid;
-    gap: 2rem 0;
+    gap: 0rem 0;
     grid-template-areas:
       "userChoice computerChoice"
       "playAgain playAgain";
